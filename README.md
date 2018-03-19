@@ -8,8 +8,8 @@
 コードの追加予定があります。  
 
 ## 開発環境
-*Mac OS  
-*Python3
+* Mac OS  
+* Python3
 
 ## Twitter
 <https://twitter.com/yukishinonome_>
