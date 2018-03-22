@@ -19,7 +19,7 @@
 文の基本的な操作  
 ＊ conditional_branch.py  
 条件分岐（シンプルなパターンマッチング）  
-＊ current_time.py
+＊ current_time.py  
 現在時刻を表示する  
 ＊ greeting.py  
 時間帯に合わせた挨拶をする  
