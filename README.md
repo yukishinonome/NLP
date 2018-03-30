@@ -29,6 +29,8 @@
 形態素解析を行う  
 ＊ mecab_002.py  
 分かち書きを行う  
+＊ mecab_003.py  
+文章から名詞のみを抽出する  
 ＊ replacement_abc.py  
 指定した文字を別の文字で置き換える  
 ＊ split_abc.py  
