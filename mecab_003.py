@@ -5,7 +5,7 @@ def mecab_003():
     m = MeCab.Tagger('-d /usr/local/lib/mecab/dic/mecab-ipadic-neologd')
     word_list = []
 
-    # ファイルから文章を読み込んで処理できる形に変換する
+    # ファイルから文章を読み込んで処理
     with open(input("分析したいファイルの名前："), 'r') as f:
         read_data = f.read()
         m_str = m.parse(read_data)
