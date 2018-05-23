@@ -21,6 +21,7 @@
 | alphabet.py | アルファベットと記号をリストで取得 |
 | conditional_branch.py | 条件分岐（シンプルなパターンマッチング） |
 | current_time.py | 現在時刻を表示する |
+| get_html.py | 指定したURLのHTMLを取得して整形した状態でHTMLファイルとして保存する |
 | greeting.py | 時間帯に合わせた挨拶をする |
 | lexicographic_order.py | 単語のリストを辞書式順序（五十音順）に並べ換える |
 | mecab_001.py | 形態素解析を行う |
