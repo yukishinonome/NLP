@@ -18,7 +18,7 @@
 | ファイル名 | 概要 |
 |:---------|:-----|
 | abc.py | 文の基本的な操作 |
-| alphabet.py | アルファベットと記号をリストで取得 |
+| alphabet.py | アルファベットと記号をリストで取得する |
 | conditional_branch.py | 条件分岐（シンプルなパターンマッチング） |
 | current_time.py | 現在時刻を表示する |
 | get_html.py | 指定したURLのHTMLを取得して整形した状態でHTMLファイルとして保存する |
@@ -30,5 +30,6 @@
 | openweathermap.py | OpenWeatherMapをAPIで利用する |
 | replacement_abc.py | 指定した文字を別の文字で置き換える |
 | split_abc.py | 文を指定した文字で分割してリストにする |
+| synonym.py | 日本語WordNetを用いて入力した単語の類義語をリストで取得する |
 | talk_abc.py | トーク実装のベース |
 | tfidf.py | 文章からTF-IDFで特徴的な単語を抽出する |
