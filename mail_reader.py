@@ -1,7 +1,5 @@
 import email
 from email.header import decode_header
-import quopri
-import base64
 import glob
 
 def get_mail_contents(filename):
