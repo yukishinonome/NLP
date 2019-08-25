@@ -39,20 +39,13 @@ def get_mail_contents(filename):
                     # タイトルを取得する関数の呼び出し
                     # get_mail_subject(email_message)
 
-                    if "base64" in part:
-                        b = base64.b64decode(payload)
-                    elif "quoted-printable" in part:
-                        b = quopri.decodestring(payload, header=False)
-                    else:
-                        b = payload
-
                     # オプションのignoreはデコードできない文字を無視する
                     if charset == "iso-2022-jp":
-                        msg = b.decode("iso-2022-jp", "ignore")
+                        msg = payload.decode("iso-2022-jp", "ignore")
                     elif charset == "shift_jis":
-                        msg = b.decode("shift_jis", "ignore")
+                        msg = payload.decode("shift_jis", "ignore")
                     else:
-                        msg = b.decode("utf-8", "ignore")
+                        msg = payload.decode("utf-8", "ignore")
 
                     # 文字列最後の不要な改行を削除
                     while msg[-1] == "\n":
