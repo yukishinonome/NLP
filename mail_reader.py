@@ -33,7 +33,7 @@ def get_mail_contents(filename):
                     # 様々な文字コードやエンコード方式に対応する必要があるが、
                     # 今回は日本語のメールだけ取得したいので意図的に限定している。
                     # 「 iso-2022-jp 」は日本語用のエンコード方式
-                    if charset != "iso-2022-jp":
+                    if charset != "iso-2022-jp" and charset != "shift_jis" and charset != "utf-8":
                         continue
 
                     # タイトルを取得する関数の呼び出し
@@ -47,12 +47,18 @@ def get_mail_contents(filename):
                         b = payload
 
                     # オプションのignoreはデコードできない文字を無視する
-                    msg = b.decode("iso-2022-jp", "ignore")
+                    if charset == "iso-2022-jp":
+                        msg = b.decode("iso-2022-jp", "ignore")
+                    elif charset == "shift_jis":
+                        msg = b.decode("shift_jis", "ignore")
+                    else:
+                        msg = b.decode("utf-8", "ignore")
 
                     # 文字列最後の不要な改行を削除
                     while msg[-1] == "\n":
                         msg = msg[:-1]
 
+                    # メールの本文を表示
                     print(msg)
                     print("\n\n-------------------------------------------------\n\n")
 
